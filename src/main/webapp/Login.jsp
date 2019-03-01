@@ -9,7 +9,7 @@
 
 <body>
 <h1><center>Login</center></h1>
-<table  width='480px' align='center'>
+<table  width='520px' align='center'>
 <form action = "Servlet2" method = "post">
        <tr> <td align='center'> </td><td>  User Name: <input type = "text" name="uname"></td></tr>
          <br />

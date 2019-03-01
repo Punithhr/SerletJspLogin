@@ -7,8 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Welome to WebApp</h1>
 <%=request.getAttribute("msg")%><br />
-<a href="LogoutServlet">Logout</a>
+<a href="Login.jsp">cLick here to login again</a>
 </body>
 </html>
