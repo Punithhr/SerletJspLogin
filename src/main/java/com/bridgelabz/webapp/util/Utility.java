@@ -3,58 +3,58 @@ package com.bridgelabz.webapp.util;
 import java.util.regex.Pattern;
 
 public class Utility {
-public static String getValidPhoneNumber(String number)
+public static boolean getValidPhoneNumber(String number)
 {
 	if(Pattern.matches("[789]{1}[0-9]{9}",number))
 	{
-		return "Valid Phone Number";
+		return true;
 				
 	}
-	return "Invalid Phone Number";
+	return false;
 }
-public static String getValidFirstName(String firstName)
+public static boolean getValidFirstName(String firstName)
 {
 	if(Pattern.matches("[a-zA-Z]{3,20}",firstName))
 	{
-		return "Valid FirstName";
+		return true;
 		
 	}
-	return "Invalid FirstName";
+	return false;
 }
-public static String getValidLastName(String lastName)
+public static boolean getValidLastName(String lastName)
 {
-	if(Pattern.matches("[a-zA-Z ]{3,10}",lastName))
+	if(Pattern.matches("[a-zA-Z ]{1,10}",lastName))
 	{
-		return "Valid lastName";
+		return true;
 		
 	}
-	return "Invalid lastName";
+	return false;
 }
-public static String getValidEmail(String email)
+public static boolean getValidEmail(String email)
 {
 	if(Pattern.matches("^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$",email))
 	{
-		return "Valid email";
+		return true;
 		
 	}
-	return "Invalid email";
+	return false;
 }
-public static String getValidUserName(String userName)
+public static boolean getValidUserName(String userName)
 {
 	if(Pattern.matches("[a-zA-Z]{3,10}",userName))
 	{
-		return "Valid userName";
+		return true;
 		
 	}
-	return "Invalid userName";
+	return false;
 }
-public static String getValidPassword(String password)
+public static boolean getValidPassword(String password)
 {
-	if(Pattern.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$",password))
+	if(Pattern.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,15}$",password))
 	{
-		return "Valid Password";
+		return true;
 		
 	}
-	return "Invalid Password";
+	return false;
 }
 }

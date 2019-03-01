@@ -7,20 +7,25 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h1><center>Registration Form</center></h1>
+
 <form action = "Servlet1" method = "post">
-         First Name: <input type = "text" name = "firstName">
-         <br />
-         Last Name:  <input type = "text" name = "lastName" />
+<table  width='480px' align='center'>
+        <tr>
+    <td align='center'> First Name: </td><td><input type = "text" name = "firstName"> </td></tr>
+  		<br />
+        <tr> <td align='center'>  Last Name: </td><td> <input type = "text" name = "lastName" /></td></tr>
          <br/>
-         User Name:  <input type = "text" name = "Uname" />
+          <tr> <td align='center'> User Name: </td><td> <input type = "text" name = "Uname" /></td></tr>
          <br/>
-         Email-id:   <input type = "text" name = "email" />
+         <tr> <td align='center'> Email-id:  </td><td>   <input type = "text" name = "email" /></td></tr>
          <br/>
-         Password:   <input type = "text" name = "pass" />
+         <tr> <td align='center'> Password:  </td><td>   <input type = "text" name = "pass" /></td></tr>
          <br/>
-         Mobile No:  <input type = "text" name = "Mnum" />
+         <tr> <td align='center'> Mobile No: </td><td>   <input type = "text" name = "Mnum" /></td></tr>
          <br/> 
-        <input type = "submit" value = "Register" />
+        <tr> <td align='center'> </td><td>  <input type = "submit" value = "Register" /></td></tr>
+    </table>
       </form>
 
 </body>

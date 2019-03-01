@@ -6,10 +6,13 @@ public class User implements Serializable {
 	
 	
 	private static final long serialVersionUID = 1L;
+	private int id;
+	
 	private String firstName;
 	private String lastName;
 	private String userName;
 	private String email;
+
 	private String password;
 	private String mobileNo;
 	
@@ -19,8 +22,19 @@ public class User implements Serializable {
 	public User() {
 		
 	}
+	public User(int id, String firstName, String lastName, String userName, String email, String password,
+			String mobileNo) {
+	
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.userName = userName;
+		this.email = email;
+		this.password = password;
+		this.mobileNo = mobileNo;
+	}
 	public User(String firstName, String lastName, String userName, String email, String password, String mobileNo) {
-		super();
+	
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.userName = userName;
@@ -63,6 +77,12 @@ public class User implements Serializable {
 	}
 	public void setMobileNo(String mobileNo) {
 		this.mobileNo = mobileNo;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	@Override
 	public String toString() {

@@ -6,15 +6,18 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+
 <body>
+<h1><center>Login</center></h1>
+<table  width='480px' align='center'>
 <form action = "Servlet2" method = "post">
-        User Name: <input type = "text" name="uname">
+       <tr> <td align='center'> </td><td>  User Name: <input type = "text" name="uname"></td></tr>
          <br />
-         Password: <input type = "text"  name="pass" >
+           <tr> <td align='center'></td><td>Password: <input type = "text"  name="pass" ></td></tr>
          <br/>
          
-        Login: <input type = "submit" value = "Login" />
-        
+         <tr> <td align='center'></td><td> <input type = "submit" value = "Login" /></td></tr>
+        </table>
          
       </form>
 </body>

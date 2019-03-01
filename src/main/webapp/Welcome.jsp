@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,10 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Error</h1>
-
-		<%=request.getAttribute("msg")%><br />
-	
-	<a href="index.jsp">Click here to home</a>
+<h1>Welome to WebApp</h1>
+<%=request.getAttribute("msg")%><br />
 </body>
 </html>
