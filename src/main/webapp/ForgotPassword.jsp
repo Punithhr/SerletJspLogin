@@ -9,6 +9,8 @@
 <body>
 <h1>Forgot Password </h1>
 <form action = "Servlet3" method = "post">
+	User Name: <input type="text" name="uname">
+	<br/>
       Email: <input type = "text" name="email">
          <br />
        New  Password: <input type = "text"  name="pass" >

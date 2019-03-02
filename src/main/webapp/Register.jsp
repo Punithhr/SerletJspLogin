@@ -9,7 +9,7 @@
 <body>
 <h1><center>Registration Form</center></h1>
 
-<form action = "Servlet1" method = "post">
+<form action = "Servlet1" method="post">
 <table  width='480px' align='center'>
         <tr>
     <td align='center'> First Name: </td><td><input type = "text" name = "firstName"> </td></tr>

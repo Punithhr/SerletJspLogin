@@ -20,5 +20,7 @@
         </table>
          
       </form>
+      <br/>
+      <a href="ForgotPassword.jsp">Forgot Password</a>
 </body>
 </html>

@@ -9,8 +9,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+
 public class LogoutServlet extends HttpServlet {
 	
+	private static final long serialVersionUID = 1L;
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
@@ -23,12 +25,7 @@ public class LogoutServlet extends HttpServlet {
 		request.setAttribute("msg","You are Successfully Logged Out");
 		RequestDispatcher rd = request.getRequestDispatcher("Logout.jsp");
 		rd.forward(request, response);
-	}
-	else
-	{
-		request.setAttribute("msg","you are timed Out login again");
-		RequestDispatcher rd = request.getRequestDispatcher("Logout.jsp");
-		rd.forward(request, response);
+	
 	}
 	}
 }
