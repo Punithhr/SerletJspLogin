@@ -17,13 +17,14 @@ import com.bridgelabz.webapp.model.Login;
  ******************************************************************************/
 public class DataBaseInterActionLogin {
 	// to get the link to the database
+	
 	Connection connection = DataBaseConnection.getConnection();
 
 	/**
 	 * in this method checking the username and the password if valid return boolean
 	 * 
 	 * @param login contains of LoginPoja Class Variables
-	 * @return
+	 * @return true or false
 	 */
 	public boolean isUser(Login login) {
 		PreparedStatement preStat = null;// initializing preparedStatement variable before using it

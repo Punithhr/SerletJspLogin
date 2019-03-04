@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -27,14 +28,18 @@ public class LoginServlet extends HttpServlet {
 		String userName = request.getParameter("uname");
 		// setting value to the request to display in jsp file
 		request.setAttribute("msg", "Welcome " + userName);
-		HttpSession oldSession = request.getSession(false);// getting the session that exist
+		/*HttpSession oldSession = request.getSession(false);// getting the session that exist
 		if (oldSession != null) {
 			oldSession.invalidate();// if another session is exist invalidating that session
-		}
+		}*/
 
 		HttpSession newSession = request.getSession(true);// creating the session for the user
+		newSession.setAttribute("uname", userName);
 		newSession.setMaxInactiveInterval(2 * 60);// given time out to invalidat session
-		//
+		Cookie cookieName = new Cookie("user", userName);
+		cookieName.setMaxAge(2*60);
+		response.addCookie(cookieName);
+		//forwarding to welcome.jsp
 		RequestDispatcher rd = request.getRequestDispatcher("Welcome.jsp");
 		rd.forward(request, response);
 
