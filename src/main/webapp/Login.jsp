@@ -11,16 +11,17 @@
 <h1><center>Login</center></h1>
 <table  width='520px' align='center'>
 <form action = "Servlet2" method = "post">
-       <tr> <td align='center'> </td><td>  User Name: <input type = "text" name="uname"></td></tr>
+       <tr> <td align='center'>  User Name:</td><td>  <input type = "text" name="uname"></td></tr>
          <br />
-           <tr> <td align='center'></td><td>Password: <input type = "text"  name="pass" ></td></tr>
+           <tr> <td align='center'>Password:</td><td> <input type = "text"  name="pass" ></td></tr>
          <br/>
          
          <tr> <td align='center'></td><td> <input type = "submit" value = "Login" /></td></tr>
-        </table>
+        
          
       </form>
       <br/>
-      <a href="ForgotPassword.jsp">Forgot Password</a>
+       <tr> <td align='center'></td><td><a href="ForgotPassword.jsp">Forgot Password</a></td></tr>
+      </table>
 </body>
 </html>

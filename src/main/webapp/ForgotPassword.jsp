@@ -7,18 +7,20 @@
 
 </head>
 <body>
-<h1>Forgot Password </h1>
+<h1><center>Forgot Password </center></h1>
+<table  width='520px' align='center'>
 <form action = "Servlet3" method = "post">
-	User Name: <input type="text" name="uname">
+	<tr> <td align='center'>  User Name:</td><td> <input type="text" name="uname"></td></tr>
 	<br/>
-      Email: <input type = "text" name="email">
+      <tr> <td align='center'>Email: </td><td> <input type = "text" name="email"></td></tr>
          <br />
-       New  Password: <input type = "text"  name="pass" >
+       <tr> <td align='center'> New  Password:</td><td> <input type = "text"  name="pass" ></td></tr>
          <br/>
          
-         <input type = "submit" value = "Confirm" />
+         <tr> <td align='center'> </td><td><input type = "submit" value = "Confirm" /></td></tr>
         
          
       </form>
+      </table>
 </body>
 </html>

@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%=request.getAttribute("msg")%>
+<%=request.getAttribute("msg")%><br/>
 <a href="Login.jsp">Click here to Login</a>
 </body>
 </html>
