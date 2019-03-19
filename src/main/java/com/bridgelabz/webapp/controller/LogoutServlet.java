@@ -35,13 +35,14 @@ public class LogoutServlet extends HttpServlet {
     	if(cookies != null){
     	for(Cookie cookie : cookies){
     		
-    		cookie.setMaxAge(1);
+    		cookie.setMaxAge(0);
     		response.addCookie(cookie);
     	}
     	}
-    	//invalidate the session if exists
+    	//getting the session if exists
     	HttpSession session = request.getSession(false);
     	//System.out.println("User="+session.getAttribute("uname"));
+    	//invalidate the session if exists
     	if(session != null){
     		session.removeAttribute("uname");
     		session.invalidate();

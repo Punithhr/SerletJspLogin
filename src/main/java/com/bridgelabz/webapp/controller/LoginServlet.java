@@ -32,12 +32,12 @@ public class LoginServlet extends HttpServlet {
 		if (oldSession != null) {
 			oldSession.invalidate();// if another session is exist invalidating that session
 		}*/
-
+		System.out.println("Hai");
 		HttpSession newSession = request.getSession(true);// creating the session for the user
 		newSession.setAttribute("uname", userName);
-		newSession.setMaxInactiveInterval(2 * 60);// given time out to invalidat session
+		newSession.setMaxInactiveInterval(2 * 60);// given time out to invalidate session
 		Cookie cookieName = new Cookie("user", userName);
-		cookieName.setMaxAge(2*60);
+		cookieName.setMaxAge(1*60);
 		response.addCookie(cookieName);
 		//forwarding to welcome.jsp
 		RequestDispatcher rd = request.getRequestDispatcher("Welcome.jsp");
