@@ -38,9 +38,10 @@ public class LoginServlet extends HttpServlet {
 		Cookie cookieName = new Cookie("user", userName);
 		cookieName.setMaxAge(1*60);
 		response.addCookie(cookieName);
+		//hai
 		//forwarding to welcome.jsp
 		RequestDispatcher rd = request.getRequestDispatcher("Welcome.jsp");
 		rd.forward(request, response);
-
+		
 	}
 }
