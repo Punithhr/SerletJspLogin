@@ -3,10 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.bridgelabz</groupId>
   <artifactId>webapp</artifactId>
-  <packaging>jar</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+   <version>0.0.1-SNAPSHOT</version>
   <name>webapp Maven Webapp</name>
   <url>http://maven.apache.org</url>
+   <properties>
+  <maven.compiler.source>1.6</maven.compiler.source>
+  <maven.compiler.target>1.6</maven.compiler.target>
+</properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -30,6 +33,7 @@
 </dependency>
     
   </dependencies>
+ 
   <build>
     <finalName>webapp</finalName>
   </build>

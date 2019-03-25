@@ -15,6 +15,7 @@ import java.sql.SQLException;
 public class DataBaseConnection {
 
 	public static Connection getConnection() {
+		
 		final String url = "jdbc:mysql://localhost:3306/WebApp";
 		final String userId = "root";
 		final String password = "password";
