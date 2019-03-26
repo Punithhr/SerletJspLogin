@@ -16,7 +16,7 @@ public class DataBaseConnection {
 
 	public static Connection getConnection() {
 		
-		final String url = "jdbc:mysql://localhost:3306/WebApp";
+		final String url = "jdbc:mysql://loginregister.cjxdqgngt02m.us-east-2.rds.amazonaws.com:3306/WebApp";
 		final String userId = "root";
 		final String password = "password";
 		Connection connection = null;
